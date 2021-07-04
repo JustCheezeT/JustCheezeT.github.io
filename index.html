@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
+        Ref: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
     <title>Nguyễn Hoàng Tùng's blog</title>
 </head>
 
@@ -16,12 +46,16 @@
             <span class="avatar"><img src="assets/images/avt.jpg" alt="Nguyễn Hoàng Tùng's Avatar" class="avt"></span>
             <h1>NGUYỄN HOÀNG TÙNG</h1>
             <p>JAVA, SOFTWARE AND WEBSITE DEVELOPER</p>
-            <h2 class="enter"><span>Enter blog </span></h2>
+            <h2 class="enter">
+                <a href="#blog">
+                    <span>Enter blog </span>
+                </a>
+            </h2>
         </header>
         <footer>
             <ul class="icons">
                 <li>
-                    <a href="https://github.com/TungNguyen0705" target="_blank" class="fa fa-github"></a>
+                    <a href="https://github.com/JustCheezeT" target="_blank" class="fa fa-github"></a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/CheezeLmao/" target="_blank" class="fa fa-facebook"></a>
@@ -32,6 +66,37 @@
             </ul>
         </footer>
     </div>
+
+    <div id="blog">
+        <header>
+            <h1 class="header">NGUYỄN HOÀNG TÙNG'S BLOG</h1>
+            <p>CHIA SẺ KIẾN THỨC CÔNG NGHỆ VÀ LẬP TRÌNH</p>
+        </header>
+        <main>
+
+            <h2 class="latest">Các bài viết mới nhất</h2>
+            <!--Source: j2team.dev -->
+            <ol class="articles">
+                <li>
+                    <a href="/blog/canh-bao-extension-giao-dien-cu.html">Ai đó sử dụng mã Google Analytics của tui, tui lần theo và hack vào Database của hắn</a>
+                </li>
+                <li>
+                    <a href="blog/hack-wifi-highlands-coffee-cgv-vincom.html">Cách "hack" Wifi của Highlands Coffee, CGV và Vincom
+                    </a>
+                </li>
+                <li>
+                    <a href="blog/lorem-ipsum.html">Lorem Ipsum</a>
+                </li>
+            </ol>
+        </main>
+        <footer>
+            <p>
+                <a href="mailto:tungnhfx09175@funix.edu.vn">Contact me</a>
+            </p>
+            <p>&copy; Nguyễn Hoàng Tùng 2021</p>
+        </footer>
+    </div>
+
 </body>
 
 </html>
