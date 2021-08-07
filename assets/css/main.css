@@ -45,7 +45,7 @@ header h1 {
 /* Round avatar */
 .avt {
     width: 30%;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     display: block;
     margin: 10% auto 0;
