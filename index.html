@@ -1,127 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Hoàng Tùng's blog</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css">
 
-    <link rel="stylesheet" href="assets/css/visuals.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+		<title>Tùng's Blog</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-dark navbar-expand-sm bg-secondary fixed-top">
+			<div class="container">
+				<a href="/" class="navbar-brand">
+					<i class="fas fa-blog"></i> &nbsp; Tùng's Blog </a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="navbarCollapse" class="collapse navbar-collapse">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="#banner" class="nav-link"> Home </a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link"> About </a>
+						</li>
+						<li class="nav-item">
+							<a href="#blog" class="nav-link"> Blog </a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link"> Contact </a>
+						</li>
+                        <li class="nav-item">
+							<a href="order.html" class="nav-link"> Order </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.js"></script>
-    <script src="assets/js/functions/smoothscrool.js"></script>
-</head>
-<body>
-    <div id="rbgradient"></div>
-    <div id="introbox" class="section-class-name" data-section-name="intro">
-        <header>
-            <img src="assets/images/avt.jpg" alt="Nguyễn Hoàng Tùng's Avatar" class="avt">
-            <h1>NGUYỄN HOÀNG TÙNG</h1>
-            <p>JAVA, SOFTWARE & WEBSITE DEVELOPER</p>
-            <a href="#about" id="enter">
-                <span>About me </span>
-            </a>
-        </header>
-        <footer>
-            <ul class="icons">
-                <li>
-                    <a href="https://github.com/JustCheezeT" target="_blank" class="fa fa-github"></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/CheezeLmao/" target="_blank" class="fa fa-facebook"></a>
-                </li>
-                <li>
-                    <a href="https://steamcommunity.com/id/IAmInfiGamez/" target="_blank" class="fa fa-steam"></a>
-                </li>
-            </ul>
-        </footer>
-    </div>
-    <nav class="sticky-top">
-        <a href="#intro">Home</a>
-        <a href="#about">About</a>
-        <a href="#blog">Blog</a>
-    </nav> 
-        <div class="section-class-name" id="aboutme" data-section-name="about">
-            <div class="container">
-                
-                <img src="assets/images/avt.jpg" alt="Nguyễn Hoàng Tùng's Avatar">
-                <h1>About Me</h1>
-                <p>
-                    Who am I? You saw my name up there, no? I was born on May 5th, 2004 in Ha Noi, Viet Nam. I have been in love with computers and programming forasmuch as I love my crush (7 years est. Actually pround of myself &lt;laugh&gt;). An introvert in life, extrovert in games. Love cheeze. And easily-distracted. 
-                </p>
-                <p class="favq">
-                    Favourite quotes:
-                </p>
-                <ul>
-                    <li>
-                        <p>
-                            <q>Leadership is not about titles, positions or flowcharts. It is about one life influencing another.</q><br>
-                            ― John Maxwell
+        <div class="main">
+            <section class="banner" id="banner">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/images/user.jpg" alt="Nguyễn Hoàng Tùng">
+                    </div>
+                    <h3>Nguyễn Hoàng Tùng</h3>
+                    <p>Java, Software & Website Developer</p>
+                    <ul class="socialMedia">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="about adjust" id="about">
+                <div class="title">
+                    <h2>About me</h2>
+                </div>
+                <div class="content">
+                    <div class="textBox">
+                        <p> Who am I? You saw my name up there, no? I was born on May 5th, 2004 in Ha Noi, Viet Nam. I have been in love with computers and programming forasmuch as I love my crush (7 years est. Actually pround of myself &lt;laugh&gt;). An introvert in life, extrovert in games. Love cheeze. And easily-distracted.
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero eros, fermentum non consectetur a, placerat id elit. Sed vulputate dignissim purus. Etiam luctus ligula at diam sollicitudin faucibus. Nulla lacus ligula, ultricies ac feugiat vel, congue quis tellus. Maecenas scelerisque dolor justo. Proin ac nisi porta, ullamcorper tellus ut, ullamcorper nisi. Ut rutrum volutpat bibendum. Aliquam convallis lorem arcu, ut laoreet leo aliquet ut. Vestibulum vestibulum convallis est, vel dignissim nisl. Nunc vehicula eleifend turpis finibus ornare. Duis placerat magna dui, at viverra tellus iaculis in. Vivamus consectetur ligula odio.
+                            <br><br>
+                            Aliquam ut libero sed justo aliquam pellentesque. Etiam vel velit urna. Integer sagittis arcu ac lacus feugiat, sed dignissim libero ultrices. Sed congue turpis vel metus sagittis semper. Phasellus at enim consectetur, consequat nulla commodo, mollis orci. Cras sollicitudin felis eget ex ullamcorper, vel sollicitudin elit rhoncus. Mauris consectetur iaculis euismod. Vivamus tincidunt ligula quis iaculis gravida. Quisque molestie purus vitae tellus placerat, eget lobortis quam pellentesque. Nullam sed nisi vitae ex dignissim suscipit vitae vitae quam. Proin scelerisque in est ut vestibulum. Sed tincidunt sed purus vel posuere. Morbi euismod dui a diam ultricies varius. Nunc commodo massa vitae est finibus aliquet.
                         </p>
-                    </li>
-                    <li>
-                        <p>
-                            <q>We cannot solve problems with the kind of thinking we employed when we came up with them.</q><br>
-                            — Albert Einstein
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <q>When you give joy to other people, you get more joy in return. You should give a good thought to happiness that you can give out.</q><br>
-                            — Eleanor Roosevelt
-                        </p>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                    <div class="imgBx">
+                        <img src="assets/images/bg1.jpg" alt="Nguyễn Hoàng Tùng">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog -->
+
+            <section class="blog adjust" id="blog">
+                <div class="title">
+                    <h2>Latest posts</h2>
+                    <p>The lastest posts from me!</p>
+                </div>
+                <div class="content">
+                    <a href="" class="blogPost">
+                        <img src="assets/images/blog.png">
+                        <h2>Post title Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Post description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero eros, fermentum non consectetur a, placerat id elit.</p>
+                    </a>
+                    <a href="" class="blogPost">
+                        <img src="assets/images/blog.png">
+                        <h2>Post title Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Post description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero eros, fermentum non consectetur a, placerat id elit.</p>
+                    </a>
+                    <a href="" class="blogPost">
+                        <img src="assets/images/blog.png">
+                        <h2>Post title Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Post description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero eros, fermentum non consectetur a, placerat id elit.</p>
+                    </a>
+                    <a href="" class="blogPost">
+                        <img src="assets/images/blog.png">
+                        <h2>Post title Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Post description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero eros, fermentum non consectetur a, placerat id elit.</p>
+                    </a>
+                    <a href="" class="blogPost">
+                        <img src="assets/images/blog.png">
+                        <h2>Post title Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Post description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero eros, fermentum non consectetur a, placerat id elit.</p>
+                    </a>
+                    <a href="" class="blogPost">
+                        <img src="assets/images/blog.png">
+                        <h2>Post title Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Post description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero eros, fermentum non consectetur a, placerat id elit.</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact adjust" id="contact">
+                <div class="title">
+                    <h2>Contact me!</h2>
+                    <p>Want to send me a message? Do it below!</p>
+                </div>
+                <div class="contactForm">
+                    <div class="row">
+                        <input type="text" name="" placeholder="First Name">
+                        <input type="text" name="" placeholder="Last Name">
+                    </div>
+                    <div class="row">
+                        <input type="text" name="" placeholder="Email Adress">
+                        <input type="text" name="" placeholder="Mobile Number">
+                    </div>
+                    <div class="row2">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="row2">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="copyright">
+                   <p>Copyright &copy; 2021 Nguyễn Hoàng Tùng.</p> 
+                </div>
+            </footer>
         </div>
-
-    <div class="section-class-name" data-section-name="blog">
-        <div class="container">
-            <header>
-                <h1 class="header">NGUYỄN HOÀNG TÙNG'S BLOG</h1>
-                <p>CHIA SẺ KIẾN THỨC CÔNG NGHỆ VÀ LẬP TRÌNH</p>
-            </header>
-            <main>
-
-                <p class="latest">Các bài viết mới nhất:</p>
-                <!--Source: j2team.dev -->
-                <ol class="articles">
-                    <li>
-                        <article>
-                            <a href="/blog/canh-bao-extension-giao-dien-cu.html">
-                                <h2>Ai đó sử dụng mã Google Analytics của tui, tui lần theo và hack vào Database của hắn</h2>
-                                <p>Article description...</p>
-                            </a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <a href="blog/hack-wifi-highlands-coffee-cgv-vincom.html">
-                                <h2>Cách "hack" Wifi của Highlands Coffee, CGV và Vincom</h2>
-                                <p>Article description...</p>
-                            </a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <a href="blog/lorem-ipsum.html">
-                                <h2>Lorem Ipsum</h2>
-                                <p>Article description...</p>
-                            </a>
-                        </article>
-                    </li>
-                </ol>
-                <!---->
-            </main>
-        </div>
-        <footer class="mainfooter">
-            <p>
-                <a href="mailto:tungnhfx09175@funix.edu.vn">Contact me</a>
-            </p>
-            <p>&copy; Nguyễn Hoàng Tùng 2021</p>
-        </footer>
-    </div>
-</body>
+	</body>
 </html>
